@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <!-- <div>
+    <md-progress-spinner 
+                         mode="determinate"></md-progress-spinner>
+    <div style="position:relative; top: -60px; left: 30px;">
+        {{ showText }}
+    </div>
+</div> -->
+<!-- 
+<div style="padding: 7px">
+  <md-progress-circle mode="determinate" value="60">60%</md-progress-circle>
+</div> -->
+<!-- div class="wrapper" data-anim="base wrapper">
+  <div class="circle" data-anim="base left"></div>
+  <div class="circle" data-anim="base right"></div>
+</div>
+<div class="arc-container">
+  <div class="arc-hider"></div>
+  <div class="arc-inset">
+      o
+  </div>
+  <div class="arc-lowerInset">
+      o
+  </div>
+  <div class="arc-overlay">
+      35%
+  </div>
+  <div class="arc-wrapper">
+      <div class="arc2"></div>
+      <div class="arc1"></div>
+  </div>
+</div> -->
+
+<!-- <round-progress
+    [current]="current"
+    [max]="max"
+    [color]="'#45ccce'"
+    [background]="'#eaeaea'"
+    [radius]="125"
+    [stroke]="20"
+    [semicircle]="true"
+    [rounded]="true"
+    [clockwise]="false"
+    [responsive]="false"
+    [duration]="800"
+    [animation]="'easeInOutQuart'"
+    [animationDelay]="0"
+    (onRender)="doSomethingWithCurrentValue($event)"></round-progress>
+</ion-content>
+ -->
+ <ion-content padding>
+    <span class="percentage">{{max}}%</span>
+  <round-progress [current]="current" [max]="max" [stroke]="stroke" [radius]="radius" [semicircle]="semicircle" [rounded]="rounded"
+    [responsive]="responsive" [clockwise]="clockwise" [color]="gradient ? 'url(#gradient)' : color" [background]="background"
+    [duration]="duration" [animation]="animation" [animationDelay]="animationDelay"> {{maxvalue}}</round-progress>
+</ion-content>

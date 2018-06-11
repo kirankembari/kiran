@@ -1,0 +1,8 @@
+{
+  "name": "notification",
+  "app_id": "b97ce94a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

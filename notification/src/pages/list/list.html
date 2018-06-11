@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> -->
+
+  <!-- <h3>Full Circle Example</h3>
+  <span class="test">{{max}}%</span>
+<round-progress [current]="current"
+ [radius]="45" [color]="'#d64930'" 
+[stroke]="5" [max]="max" style="    margin-left: 93px;
+margin-top: 40px;"></round-progress> -->
+<!-- 
+ <h3>Semi Circle Example</h3>
+ <round-progress [semicircle]="true" 
+[current]="current" [color]="'#4801b8'" 
+[radius]="45" [stroke]="5" [max]="max">
+</round-progress> -->
+
+<round-slider #sliderElem 
+  [width]="180" 
+  [height]="180" 
+  [radius]="60"
+  [value]="levelControlValue"
+ 
+
+></round-slider>
+</ion-content>
